@@ -1,4 +1,6 @@
 #### 函数式编程
+> [练习代码](https://github.com/Zzz468005600/python-study/blob/master/code/test_functional_programming.py)
+
 - 高阶函数
 > 在python中函数名是指向函数的变量，当函数的参数也是函数的时候，这种函数我们称之为高阶函数。
 ```

@@ -1,4 +1,6 @@
 #### 函数
+> [练习代码](https://github.com/Zzz468005600/python-study/blob/master/code/test_function.py)
+
 **1. 定义函数**
 - 使用def语句，依次写出函数名、括号、括号中的参数和冒号:，然后，在缩进块中编写函数体，函数的返回值用return语句返回。
 ```

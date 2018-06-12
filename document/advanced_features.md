@@ -1,4 +1,6 @@
 #### 高级特性
+> [练习代码](https://github.com/Zzz468005600/python-study/blob/master/code/test_advanced_features.py)
+
 - 切片(Slice)
 ```
 L = list(range(100))
