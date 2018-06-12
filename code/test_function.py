@@ -2,6 +2,7 @@
 # _*_coding: utf-8_*_
 
 
+# 寻找最大和最小的数字
 def find_min_and_max(l):
     if not isinstance(l, (list, tuple)):
         raise TypeError("wrong type")
