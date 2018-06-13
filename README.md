@@ -1,5 +1,8 @@
 ## About
 ### 目录
+
+1. [Mac下安装python3](https://github.com/Zzz468005600/python-study/blob/master/document/python_install.md)
+
 1. [数据类型](https://github.com/Zzz468005600/python-study/blob/master/document/data_type.md)
 2. [函数](https://github.com/Zzz468005600/python-study/blob/master/document/function.md)
 3. [高级特性](https://github.com/Zzz468005600/python-study/blob/master/document/advanced_features.md)
