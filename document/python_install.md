@@ -33,3 +33,5 @@
 ![PyCharm配置](../images/IDE配置.png)
 
 
+
+当然也可以使用pyenv去管理python，怎么使用很简单的。
