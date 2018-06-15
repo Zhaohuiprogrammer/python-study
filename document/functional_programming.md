@@ -1,4 +1,4 @@
-#函数式编程
+# 函数式编程
 
 > [练习代码](https://github.com/Zzz468005600/python-study/blob/master/code/test_functional_programming.py)
 
@@ -90,7 +90,7 @@ list(filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]))
 ['Zoo', 'Credit', 'bob', 'about']
 ```
 
-### 二、 返回函数
+## 二、 返回函数
 
 ### 1. 定义
 
