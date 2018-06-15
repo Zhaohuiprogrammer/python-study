@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # _*_coding: utf-8_*_
+import time, functools
 from functools import reduce
 
 DIGITS = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
@@ -81,4 +82,38 @@ counterB = createCounter()
 if [counterB(), counterB(), counterB(), counterB()] == [1, 2, 3, 4]:
     print('测试通过!')
 else:
+    print('测试失败!')
+
+# 匿名函数
+f = lambda x: x * x
+print(f(1))
+
+
+# 装饰器
+def metric(fn):
+    @functools.wraps(fn)
+    def wrapper(*args, **kw):
+        print('%s executed in %s ms' % (fn.__name__, 10.24))
+        return fn(*args)
+    return wrapper
+
+
+# 测试
+@metric
+def fast(x, y):
+    time.sleep(0.0012)
+    return x + y;
+
+
+@metric
+def slow(x, y, z):
+    time.sleep(0.1234)
+    return x * y * z;
+
+
+f = fast(11, 22)
+s = slow(11, 22, 33)
+if f != 33:
+    print('测试失败!')
+elif s != 7986:
     print('测试失败!')
