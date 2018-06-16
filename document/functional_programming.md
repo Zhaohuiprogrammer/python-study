@@ -2,7 +2,7 @@
 
 > [练习代码](https://github.com/Zzz468005600/python-study/blob/master/code/test_functional_programming.py)
 
-## 一、 高阶函数
+## 高阶函数
 
 > 在python中函数名是指向函数的变量，当函数的参数也是函数的时候，这种函数我们称之为高阶函数。
 ```python
@@ -10,7 +10,7 @@ def add(x, y, f):
     return f(x) + f(y)
 add(1, -6, abs)
 ```
-### 1. map/reduce
+### map/reduce
 
 > map()函数接收两个参数，一个是函数，一个是Iterable，map将传入的函数依次作用到序列的每个元素，并把结果作为新的Iterator返回。
 ```python
@@ -37,7 +37,7 @@ def char2num(s):
 def str2int(s):
     return reduce(lambda x, y: x * 10 + y, map(char2num, s))
 ```
-### 2. filter
+### filter
 
 Python内建的filter()函数用于过滤序列。
 
@@ -53,7 +53,7 @@ list(filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]))
 # 结果: [1, 5, 9, 15]
 ```
 
-### 3. sorted
+### sorted
 
 对list进行排序：
 
@@ -90,9 +90,9 @@ list(filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]))
 ['Zoo', 'Credit', 'bob', 'about']
 ```
 
-## 二、 返回函数
+## 返回函数
 
-### 1. 定义
+### 定义
 
 高阶函数除了可以接受函数作为参数外，还可以把函数作为结果值返回。
 
@@ -133,7 +133,7 @@ def lazy_sum(*args):
 25
 ```
 
-### 2. 闭包
+### 闭包
 
 如上所示的例子中，我们在函数lazy_sum中又定义了函数sum，并且，内部函数sum可以引用外部函数lazy_sum的参数和局部变量，当lazy_sum返回函数sum时，相关参数和变量都保存在返回的函数中，这种称为“闭包（Closure）”。
 
@@ -164,7 +164,7 @@ f1, f2, f3 = count()
 9
 ```
 
-## 三、 匿名函数
+## 匿名函数
 
 关键字lambda表示匿名函数，冒号前面的x表示函数参数。匿名函数有个限制，就是只能有一个表达式，不用写return，返回值就是该表达式的结果。
 
@@ -173,7 +173,7 @@ f1, f2, f3 = count()
 [1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
-## 四、 装饰器
+## 装饰器
 
 代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）。本质上，decorator就是一个返回函数的高阶函数。
 
@@ -262,7 +262,7 @@ def log(text):
     return decorator
 ```
 
-## 五、 偏函数
+## 偏函数
 
 Python的functools模块提供了很多有用的功能，其中一个就是偏函数（Partial function）。把一个函数的某些参数给固定住（也就是设置默认值），返回一个新的函数，调用这个新函数会更简单。
 

@@ -1,7 +1,7 @@
-#### 高级特性
+# 高级特性
 > [练习代码](https://github.com/Zzz468005600/python-study/blob/master/code/test_advanced_features.py)
 
-- 切片(Slice)
+## 切片(Slice)
 ```
 L = list(range(100))
 L[:10]
@@ -18,7 +18,7 @@ L[:10]
 ```
 > 在很多编程语言中，针对字符串提供了很多各种截取函数（例如，substring），其实目的就是对字符串切片。Python没有针对字符串的截取函数，只需要切片一个操作就可以完成，非常简单。
 
-- 迭代
+## 迭代
 1. 通过collections模块的Iterable类型判断对象是否为可迭代对象
 ```
 from collections import Iterable
@@ -36,7 +36,7 @@ for i, value in enumerate(['A', 'B', 'C']):
     1 B
     2 C
 ```
-- 列表生成
+## 列表生成
 1. `list(range(1, 11))`
 2. 生成\[1x1, 2x2, 3x3, ..., 10x10]
 ```
@@ -48,7 +48,7 @@ for x in range(1, 11):
 ```
 [x * x for x in range(1, 11)]
 ```
-- 生成器（generator）
+## 生成器（generator）
 > generator保存的是算法，每次调用next(g)，就计算出g的下一个元素的值，直到计算到最后一个元素，没有更多的元素时，抛出StopIteration的错误;
 > 同样也可以使用for循环遍历
 1. 把一个列表生成式的\[\]改成()
@@ -82,7 +82,7 @@ def fib(max):
     return 'done'
 f = fib(6)
 ```
-- 迭代器
+## 迭代器
 1. 可以直接作用于for循环的数据类型有以下几种：
 一类是集合数据类型，如list、tuple、dict、set、str等；
 一类是generator，包括生成器和带yield的generator function

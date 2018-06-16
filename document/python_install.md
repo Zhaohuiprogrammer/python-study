@@ -1,4 +1,4 @@
-## 在Mac下安装并使用python3
+# 在Mac下安装并使用python3
 
 现在Python主要有两个版本：Python2.X和Python3.X。Mac上自带的版本是Python2.7.13（macOS 10.13.4下），那么如果我们要安装Python3.X并使用它怎么办？
 
@@ -12,7 +12,7 @@
 
 安装完可以跑一下：brew --version，如果出现：Homebrew ***证明安装成功了。
 
-安装Python3
+## 安装Python3
 
 一种是直接到Python官网下载，另一种是在终端下输入：brew install python3
 
@@ -24,7 +24,7 @@
 
 证明安装成功啦。
 
-使用Python3
+## 使用Python3
 
 - 第一种方法是配置环境变量，自行google
 - 第二种方法很简单，当使用python2的时候终端里敲上：python，当使用python3的时候终端里敲上：python3

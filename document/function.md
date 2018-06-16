@@ -1,7 +1,7 @@
-#### 函数
+# 函数
 > [练习代码](https://github.com/Zzz468005600/python-study/blob/master/code/test_function.py)
 
-**1. 定义函数**
+## 定义函数
 - 使用def语句，依次写出函数名、括号、括号中的参数和冒号:，然后，在缩进块中编写函数体，函数的返回值用return语句返回。
 ```
 def my_abs(x):
@@ -19,8 +19,8 @@ def move(x, y, step, angle=0):
     return nx, ny
 x, y = move(100, 100, 60, math.pi / 6)
 ```
-**2. 函数的参数**
-- 位置参数
+## 函数的参数
+### 位置参数
 ```
 def power(x, n):
         s = 1
@@ -30,7 +30,7 @@ def power(x, n):
         return s
 ```
 > power(x, n)函数有两个参数：x和n，这两个参数都是位置参数，调用函数时，传入的两个值按照位置顺序依次赋给参数x和n。
-- 默认参数
+### 默认参数
 ```
 def enroll(name, gender, age=6, city='Beijing'):
     print('name:', name)
@@ -42,7 +42,7 @@ enroll('Adam', 'M', city='Tianjin')
 ```
 > 从上面的例子可以看出，默认参数可以简化函数的调用。设置默认参数时，有几点要注意：
 一是必选参数在前，默认参数在后，否则Python的解释器会报错；二是当函数有多个参数时，把变化大的参数放前面，变化小的参数放后面。变化小的参数就可以作为默认参数。三是默认参数必须指向不变对象（str、None等）！
-- 可变参数
+### 可变参数
 ```
 def calc(*numbers):
     sum = 0
@@ -54,7 +54,7 @@ nums = [1, 2, 3]
 calc(*nums)
 ```
 > 可以看出，可变参数就是传入的参数个数是可变的，可以是1个、2个到任意个，还可以是0个。
-- 关键字参数
+### 关键字参数
 > 可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。而关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict。
 ```
 def person(name, age, **kw):
@@ -64,7 +64,7 @@ person('Jack', 24, **extra)
 
 >>> name: Jack age: 24 other: {'city': 'Beijing', 'job': 'Engineer'}
 ```
-- 命名关键字参数
+### 命名关键字参数
 ```
 def person(name, age, *, city, job):
     print(name, age, city, job)
