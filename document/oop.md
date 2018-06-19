@@ -2,9 +2,6 @@
 
 > 面向对象编程——Object Oriented Programming，简称OOP，是一种程序设计思想。OOP把对象作为程序的基本单元，一个对象包含了数据和操作数据的函数。
 
-![人生苦短，我用python](http://pa8r6emo8.bkt.clouddn.com/blog/python.png)
-
-<!-- more -->
 
 # 类和实例
 
