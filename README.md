@@ -9,6 +9,7 @@
 6. [模块](https://github.com/Zzz468005600/python-study/blob/master/document/module.md)
 7. [面向对象编程](https://github.com/Zzz468005600/python-study/blob/master/document/oop.md)
 8. [面向对象高级编程](https://github.com/Zzz468005600/python-study/blob/master/document/advanced_oop.md)
+9. [错误，调试和测试](https://github.com/Zzz468005600/python-study/blob/master/document/debug.md)
 
 **或者访问我的博客查看python学习**  [博客地址](https://zzz468005600.github.io/)
 
