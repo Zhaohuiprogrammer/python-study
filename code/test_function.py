@@ -8,8 +8,10 @@ def find_min_and_max(l):
         raise TypeError("wrong type")
     if len(l) == 0:
         return None, None
-    min_num = 0
-    max_num = 0
+    if len(l) == 1:
+        return l[0], l[0]
+    min_num = l[0]
+    max_num = l[0]
     for n in l:
         if n < min_num:
             min_num = n
