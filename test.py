@@ -1,20 +1,43 @@
 #!/usr/bin/env python3
 # _*_coding: utf-8_*_
 
+import threading
 
-def not_empty(s):
-    return s and s.strip()
+#
+# def not_empty(s):
+#     return s and s.strip()
+#
+#
+# print(not_empty("123"))
+#
+#
+# def _not_divisible(n):
+#     return lambda x: x % n > 0
+#
+#
+# print(_not_divisible(2))
+#
+#
+# def test(x):
+#     return x % 4 > 0
 
 
-print(not_empty("123"))
+local_school = threading.local()
 
 
-def _not_divisible(n):
-    return lambda x: x % n > 0
+def process_student():
+    std = local_school.student
+    print("hello, %s(in %s)" % (std, threading.current_thread().name))
 
 
-print(_not_divisible(2))
+def process_thread(name):
+    local_school.student = name
+    process_student()
 
 
-def test(x):
-    return x % 4 > 0
+t1 = threading.Thread(target=process_thread, args=('Alice',), name="Thread A")
+t2 = threading.Thread(target=process_thread, args=('Bob',), name="Thread B")
+t1.start()
+t2.start()
+t1.join()
+t2.join()
