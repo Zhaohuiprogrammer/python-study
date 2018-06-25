@@ -1,4 +1,4 @@
-## About
+## Python学习整理
 ### 目录
 
 1. [Mac下安装python3](https://github.com/Zzz468005600/python-study/blob/master/document/python_install.md)
