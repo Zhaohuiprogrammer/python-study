@@ -192,3 +192,5 @@ Student
 >>> print(s.name) # 再次调用s.name，由于实例的name属性没有找到，类的name属性就显示出来了
 Student
 ```
+
+**[>> 下一篇：面向对象高级编程](https://github.com/Zzz468005600/python-study/blob/master/document/advanced_oop.md)**
