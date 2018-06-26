@@ -229,3 +229,5 @@ Python内置的`json`模块提供了非常完善的Python对象到JSON格式的�
 ```
 
 由于JSON标准规定JSON编码是UTF-8，所以我们总是能正确地在Python的`str`与JSON的字符串之间转换。
+
+**[>> 下一篇：进程和线程](https://github.com/Zzz468005600/python-study/blob/master/document/process_thread.md)**
