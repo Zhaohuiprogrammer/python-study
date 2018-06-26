@@ -286,4 +286,6 @@ kw = { 'base': 2 }
 int('10010', **kw)
 ```
 
+**[>> 下一篇：模块](https://github.com/Zzz468005600/python-study/blob/master/document/module.md)**
+
 

@@ -43,3 +43,5 @@ s
 
 >>>{1, 2, 3}
 ```
+
+**[>> 下一篇：函数](https://github.com/Zzz468005600/python-study/blob/master/document/function.md)**

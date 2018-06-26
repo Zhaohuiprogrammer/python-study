@@ -172,3 +172,5 @@ Hello, Bob (in Thread-B)
 可以理解为全局变量`local_school`是一个`dict`，不但可以用`local_school.student`，还可以绑定其他变量，如`local_school.teacher`等等。
 
 `ThreadLocal`最常用的地方就是为每个线程绑定一个数据库连接，HTTP请求，用户身份信息等，这样一个线程的所有调用到的处理函数都可以非常方便地访问这些资源。
+
+**[>> 下一篇：正则](https://github.com/Zzz468005600/python-study/blob/master/document/re.md)**

@@ -478,3 +478,5 @@ metaclass，直译为元类，简单的解释就是：
 连接起来就是：先定义metaclass，就可以创建类，最后创建实例。
 
 所以，metaclass允许你创建类或者修改类。换句话说，你可以把类看成是metaclass创建出来的“实例”。
+
+**[>> 下一篇：错误，调试和测试](https://github.com/Zzz468005600/python-study/blob/master/document/debug.md)**

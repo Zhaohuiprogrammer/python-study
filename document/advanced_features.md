@@ -109,3 +109,5 @@ while True:
 ```
 小结:Python的Iterator对象表示的是一个数据流，这个数据流看做是一个有序序列，但我们却不能提前知道序列的长度，只能不断通过next()函数实现按需计算下一个数据，所以Iterator的计算是惰性的，只有在需要返回下一个数据时它才会计算。
 Iterator甚至可以表示一个无限大的数据流，例如全体自然数。而使用list是永远不可能存储全体自然数的。
+
+**[>> 下一篇：函数式编程](https://github.com/Zzz468005600/python-study/blob/master/document/functional_programming.md)**

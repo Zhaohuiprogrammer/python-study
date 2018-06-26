@@ -80,7 +80,7 @@ person('Jack', 24, job='Engineer')
 ```
 > 和关键字参数\*\*kw不同，命名关键字参数需要一个特殊分隔符\*，\*后面的参数被视为命名关键字参数。如果函数定义中已经有了一个可变参数，后面跟着的命名关键字参数就不再需要一个特殊分隔符\*了
 
-
+**[>> 下一篇：高级特性](https://github.com/Zzz468005600/python-study/blob/master/document/advanced_features.md)**
 
 
 

@@ -35,3 +35,5 @@
 
 
 当然也可以使用pyenv去管理python，怎么使用很简单的。
+
+**[>> 下一篇：数据类型](https://github.com/Zzz468005600/python-study/blob/master/document/data_type.md)**
