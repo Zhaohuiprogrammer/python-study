@@ -1,7 +1,6 @@
 from urllib import request
 from http import cookiejar
 
-
 url = "http://www.baidu.com"
 
 print("第一种方法")
