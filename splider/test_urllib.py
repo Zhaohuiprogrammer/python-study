@@ -1,6 +1,8 @@
+#!/usr/bin/env python3
+# _*_coding: utf-8_*_
+
 from urllib import request
 from http import cookiejar
-
 
 url = "http://www.baidu.com"
 
